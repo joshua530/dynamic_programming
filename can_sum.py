@@ -52,10 +52,10 @@ def can_sum_tabulation(target: int, nums: List[int]) -> bool:
             current = nums[j]
             if i + current < len(table) and table[i] == True:
                 table[i + current] = True
-    print(table)
     return table[target]
 
 
 print(can_sum_tabulation(7, [5, 3, 4]))
 print(can_sum_tabulation(7, [2, 4]))
 print(can_sum_tabulation(100, [7]))
+print(can_sum_tabulation(400, [7, 14]))
